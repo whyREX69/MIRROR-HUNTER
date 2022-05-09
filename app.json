@@ -1,0 +1,54 @@
+{
+    "name": "cwaa-mirror",
+    "description": "mirror",
+    "keywords": [
+        "mirror"
+    ],
+    "repository": "https://github.com/whyREX69/MIRROR-HUNTER",
+    "env": {
+        "BOT_TOKEN": {
+            "description": "",
+            "required": "True"
+        },
+        "GDRIVE_FOLDER_ID": {
+            "description": "",
+            "required": "True"
+        },
+        "OWNER_ID": {
+            "description": "",
+            "required": "True"
+        },
+        "TELEGRAM_API": {
+            "description": "",
+            "required": "True"
+        },
+        "TELEGRAM_HASH": {
+            "description": "",
+            "required": "True"
+        },
+        "AUTHOR_NAME": {
+            "description": "",
+            "required": "True"
+        },
+        "BASE_URL_OF_BOT": {
+            "description": "",
+            "required": "True"
+        },
+        "IS_TEAM_DRIVE": {
+            "description": "",
+            "required": "True"
+        }
+    },
+    "stack": "heroku-20",
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        }
+    ],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    }
+}
